@@ -1,0 +1,81 @@
+:root{
+    /*Primárias*/
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    
+    /*Light Theme*/
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue: hsl(233, 11%, 84%);
+    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+    /*Dark Theme*/
+    --Very-Dark-Blue: hsl(235, 21%, 11%);
+    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+    --Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+    --font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background: url("/assets/images/bg-desktop-dark.jpg");
+    height: 35vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.background{
+    background-color: var(--Very-Dark-Blue);
+    height: 65vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.container__titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container__tarefas{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__inicial{
+    padding-bottom: 2em;
+}
+
+.titulo__principal{
+    font-size: 25pt;
+    letter-spacing: 0.2em;
+    color: var(--Very-Light-Gray);
+    padding-bottom: 1em;
+}
+
+.input__padrao{
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    padding: 0.5em;
+
+}
+
+.container__total{
+    height: 70vh;
+    width: 30vw;
+    z-index: 10;
+    margin: auto;
+}
+
+.icone__theme{
+    height: 25px;
+    width: 25px;
+}
