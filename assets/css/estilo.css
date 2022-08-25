@@ -164,6 +164,28 @@
     cursor: pointer;
 }
 
+.nova-tarefa{
+    cursor: pointer;
+    border: none;
+    background-color: var(--Background-input);
+    color: var(--Letra-input-color);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nova-tarefa::placeholder{
+    color: var(--Letra-input-color);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nova-tarefa:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .icone__excluir{
     cursor: pointer;
     width: 15px;

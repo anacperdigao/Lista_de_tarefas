@@ -18,6 +18,9 @@ const iconeTema = document.querySelector(".icone__theme")
 iconeTema.addEventListener("click", trocaTema)
 
 function trocaTema(){
-    html.classList.toggle("white__mode")
+    if(iconeTema.src = "/assets/images/icon-sun.svg"){
+        iconeTema.src = "/assets/images/icon-moon.svg"
+        html.classList.toggle("white__mode")
+    }
 }
 
