@@ -19,35 +19,46 @@
 <body>
 
   <header class="cabecalho">
-
-
-  </header>
-
-  <main class="background">
-
+    
     <section class="container__total">
 
-      <div class="container__inicial">
-        
+      <section class="container__inicial">
         <div class="container__titulo">
           <h1 class="titulo__principal">TAREFAS</h1>
           <img class="icone__theme" src="/assets/images/icon-sun.svg" alt="Imagem de sol para trocar o tema para light">
         </div>  
         
-        <label class="input__padrao" for="radio-nova-tarefa"><input type="radio" name="nova-tarefa" value="text" id="radio-nova-tarefa">Insira uma nova tarefa</label>
+        <label class="input__padrao" for="radio-nova-tarefa"><input type="radio" name="nova-tarefa" value="text" id="radio-nova-tarefa" class="input__radio">Insira uma nova tarefa</label>
+      </section>
       
-      </div>
-      
-      <div class="container__tarefas">
-        <label class="input__padrao" for="tarefa-1"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-1">Meditar 10 min</label>
-        <label class="input__padrao" for="tarefa-2"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-2">Ir ao mercado</label>
-        <label class="input__padrao" for="tarefa-3"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-3">Lavar roupa</label>
-        <label class="input__padrao" for="tarefa-4"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-4">Ler por 30 min</label>
-        <label class="input__padrao" for="tarefa-5"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-5">Comprar comida gatos</label>
-        <label class="input__padrao" for="tarefa-6"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-6">Ir pra academia</label>
-      </div>
+      <section class="container__tarefas">
+        <label class="input__padrao" for="tarefa-1"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-1" class="input__radio">Meditar 10 min</label>
+        <label class="input__padrao" for="tarefa-2"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-2" class="input__radio">Ir ao mercado</label>
+        <label class="input__padrao" for="tarefa-3"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-3" class="input__radio">Lavar roupa</label>
+        <label class="input__padrao" for="tarefa-4"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-4" class="input__radio">Ler por 30 min</label>
+        <label class="input__padrao" for="tarefa-5"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-5" class="input__radio">Comprar comida gatos</label>
+        
+        <div class="linha__final">
+          <p id="itens__restantes">5 itens restantes</p>
+          
+          <div class="linha__filtros"> 
+            <p id="filtro__todos">Todos</p>
+            <p id="filtro__ativos">Ativos</p>
+            <p id="filtro__finalizados">Finalizados</p>
+          </div> 
+          
+          <p id="filtro__limpar">Limpar Finalizados</p>
+        </div>
+
+      </section>
 
     </section>
+
+  </header>
+
+  <main class="background">
+
+    
   </main>
 
   <script src="/script.js"></script>  

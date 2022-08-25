@@ -52,30 +52,77 @@
 }
 
 .container__inicial{
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo__principal{
     font-size: 25pt;
     letter-spacing: 0.2em;
     color: var(--Very-Light-Gray);
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
 }
 
 .input__padrao{
     background-color: var(--Very-Dark-Desaturated-Blue);
-    padding: 0.5em;
-
+    padding: 1em;
+    color: var(--Light-Grayish-Blue);
+    font-size: 15px;
+    font-weight: 400;
 }
 
+
 .container__total{
-    height: 70vh;
-    width: 30vw;
-    z-index: 10;
+    position: relative;
+    height: 50vh;
+    width: 35vw;
+    z-index: 100;
     margin: auto;
+    top: 60px;
+    
 }
 
 .icone__theme{
     height: 25px;
     width: 25px;
+    cursor: pointer;
+}
+
+.icone__theme:hover{
+    height: 26px;
+    width: 26px;
+}
+
+.input__radio{
+    width: 20px;
+    height: 20px;
+}
+
+.linha__final{
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    padding: 1em;
+    color: var(--Light-Grayish-Blue);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.linha__filtros{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+}
+
+#itens__restantes, #filtro__todos, #filtro__ativos, #filtro__finalizados, #filtro__limpar{
+    cursor: pointer;
+}
+
+#itens__restantes:hover, #filtro__todos:hover, #filtro__ativos:hover, #filtro__finalizados:hover, #filtro__limpar:hover{
+    text-decoration: underline;
 }
