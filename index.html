@@ -28,26 +28,74 @@
           <img class="icone__theme" src="/assets/images/icon-sun.svg" alt="Imagem de sol para trocar o tema para light">
         </div>  
         
-        <label class="input__padrao" for="radio-nova-tarefa"><input type="radio" name="nova-tarefa" value="text" id="radio-nova-tarefa" class="input__radio">Insira uma nova tarefa</label>
+        <div class="input__padrao-principal" id="input__padrao-principal">   
+          <input type="checkbox" name="nova-tarefa" value="text" id="check-nova-tarefa" class="input__checkbox">
+          <label class="tarefas" for="check-nova-tarefa">Insira uma nova tarefa</label>
+        </div>  
+
       </section>
       
       <section class="container__tarefas">
-        <label class="input__padrao" for="tarefa-1"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-1" class="input__radio">Meditar 10 min</label>
-        <label class="input__padrao" for="tarefa-2"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-2" class="input__radio">Ir ao mercado</label>
-        <label class="input__padrao" for="tarefa-3"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-3" class="input__radio">Lavar roupa</label>
-        <label class="input__padrao" for="tarefa-4"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-4" class="input__radio">Ler por 30 min</label>
-        <label class="input__padrao" for="tarefa-5"><input type="radio" name="tarefa-incluida" value="text" id="tarefa-5" class="input__radio">Comprar comida gatos</label>
+        <div class="input__padrao" id="primeiro-input"> 
+          
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-1" class="input__checkbox">
+            <label class="tarefas" for="tarefa-1">Meditar 10 min</label>
+          </div>
+          <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
         
-        <div class="linha__final">
-          <p id="itens__restantes">5 itens restantes</p>
+        </div> 
+        
+        <div class="input__padrao"> 
+        
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-2" class="input__checkbox">
+            <label class="tarefas" for="tarefa-2">Ir ao mercado</label>
+          </div>
+          <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
+        
+        </div> 
+
+        <div class="input__padrao"> 
+          
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-3" class="input__checkbox">
+            <label class="tarefas" for="tarefa-3">Lavar roupa</label>
+          </div>
+            <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
+        
+        </div>
+
+        <div class="input__padrao"> 
+          
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-4" class="input__checkbox">
+            <label class="tarefas" for="tarefa-4">Ler por 30 min</label>
+          </div>
+          <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
+
+        </div>
+
+        <div class="input__padrao"> 
+          
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-5" class="input__checkbox">
+            <label class="tarefas" for="tarefa-5">Comprar comida gatos</label>
+          </div>
+          <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">  
+        
+        </div>
+
+        <div class="linha__final" id="ultimo-input">
+          <p class="linha__final-itens" id="itens__restantes">5 itens restantes</p>
           
           <div class="linha__filtros"> 
-            <p id="filtro__todos">Todos</p>
-            <p id="filtro__ativos">Ativos</p>
-            <p id="filtro__finalizados">Finalizados</p>
+            <p class="linha__final-itens" id="filtro__todos">Todos</p>
+            <p class="linha__final-itens" id="filtro__ativos">Ativos</p>
+            <p class="linha__final-itens" id="filtro__finalizados">Finalizados</p>
           </div> 
           
-          <p id="filtro__limpar">Limpar Finalizados</p>
+          <p class="linha__final-itens" id="filtro__limpar">Limpar Finalizados</p>
         </div>
 
       </section>

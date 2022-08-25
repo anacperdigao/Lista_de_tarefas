@@ -2,24 +2,27 @@
     /*Primárias*/
     --Bright-Blue: hsl(220, 98%, 61%);
     --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-    
-    /*Light Theme*/
-    --Very-Light-Gray: hsl(0, 0%, 98%);
-    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
-    --Light-Grayish-Blue: hsl(233, 11%, 84%);
-    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
-    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
 
     /*Dark Theme*/
-    --Very-Dark-Blue: hsl(235, 21%, 11%);
-    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
-    --Light-Grayish-Blue: hsl(234, 39%, 85%);
-    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
-    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
-    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
-    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+    --Titulo-color: hsl(0, 0%, 98%);
+    --Background-color: hsl(235, 21%, 11%);
+    --Background-input: hsl(235, 24%, 19%);
+    --Letra-input-color: hsl(234, 39%, 85%);
+    --Letra-linha-final-hover: hsl(236, 33%, 92%);
+    --Letra-linha-final: hsl(234, 11%, 52%);
+    --Borders-color: hsl(237, 14%, 26%);
+    --Input-exclusao-color: hsl(233, 11%, 84%);
+}
 
-    --font-size: 18px;
+.white__mode:root { 
+    --Background-color: hsl(236, 33%, 92%);
+    --Background-input: hsl(0, 0%, 98%);
+    --Letra-input-color: hsl(235, 19%, 35%);
+    --Borders-color: hsl(236, 33%, 92%);
+    --Letra-linha-final: hsl(236, 9%, 61%);
+    --Letra-linha-final-hover:hsl(235, 19%, 35%);
+    --Titulo-color: hsl(0, 0%, 98%);
+    --Input-exclusao-color: hsl(233, 11%, 84%);
 }
 
 *{
@@ -34,7 +37,7 @@
 }
 
 .background{
-    background-color: var(--Very-Dark-Blue);
+    background-color: var(--Background-color);
     height: 65vh;
     width: 100vw;
     z-index: -1;
@@ -51,6 +54,18 @@
     flex-direction: column;
 }
 
+/*Por causa do erro do border-radius no container__tarefas, vou fazer isoladamente em 2 componentes*/
+
+#primeiro-input{
+    border-radius: 5px 5px 0px 0px;
+}
+
+#ultimo-input{
+    border-radius: 0px 0px 5px 5px;
+}
+
+/*Erro acaba aqui, tentar consertar depois*/
+
 .container__inicial{
     padding-bottom: 1.5em;
     display: flex;
@@ -60,18 +75,36 @@
 .titulo__principal{
     font-size: 25pt;
     letter-spacing: 0.2em;
-    color: var(--Very-Light-Gray);
+    color: var(--Titulo-color);
     padding-bottom: 0.7em;
 }
 
 .input__padrao{
-    background-color: var(--Very-Dark-Desaturated-Blue);
+    background-color: var(--Background-input);
     padding: 1em;
-    color: var(--Light-Grayish-Blue);
+    color: var(--Letra-input-color);
     font-size: 15px;
     font-weight: 400;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Borders-color);
+    
 }
 
+.input__padrao-principal{
+    background-color: var(--Background-input);
+    padding: 1em;
+    color: var(--Letra-input-color);
+    font-size: 15px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
 
 .container__total{
     position: relative;
@@ -94,21 +127,21 @@
     width: 26px;
 }
 
-.input__radio{
+.input__checkbox{
     width: 20px;
     height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .linha__final{
-    background-color: var(--Very-Dark-Desaturated-Blue);
+    background-color: var(--Background-input);
     padding: 1em;
-    color: var(--Light-Grayish-Blue);
     font-size: 12px;
-    font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: var(--Dark-Grayish-Blue);
+    color: var(--Letra-linha-final);
     font-weight: 700;
 }
 
@@ -119,10 +152,27 @@
 
 }
 
-#itens__restantes, #filtro__todos, #filtro__ativos, #filtro__finalizados, #filtro__limpar{
+.linha__final-itens{
     cursor: pointer;
 }
 
-#itens__restantes:hover, #filtro__todos:hover, #filtro__ativos:hover, #filtro__finalizados:hover, #filtro__limpar:hover{
-    text-decoration: underline;
+.linha__final-itens:hover{
+    color: var(--Letra-linha-final-hover);
+}
+
+.tarefas{
+    cursor: pointer;
+}
+
+.icone__excluir{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.check-tarefa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
