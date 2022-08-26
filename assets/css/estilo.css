@@ -52,19 +52,9 @@
 .container__tarefas{
     display: flex;
     flex-direction: column;
+    overflow: auto;
+    height: 290px;
 }
-
-/*Por causa do erro do border-radius no container__tarefas, vou fazer isoladamente em 2 componentes*/
-
-#primeiro-input{
-    border-radius: 5px 5px 0px 0px;
-}
-
-#ultimo-input{
-    border-radius: 0px 0px 5px 5px;
-}
-
-/*Erro acaba aqui, tentar consertar depois*/
 
 .container__inicial{
     padding-bottom: 1.5em;

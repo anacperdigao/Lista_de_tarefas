@@ -36,11 +36,11 @@
       </section>
       
       <section class="container__tarefas">
-        <div class="input__padrao" id="primeiro-input"> 
+        <div class="input__padrao"> 
           
           <div class="check-tarefa">
-            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-1" class="input__checkbox">
-            <label class="tarefas" for="tarefa-1">Meditar 10 min</label>
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Meditar 10 min</label>
           </div>
           <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
         
@@ -49,8 +49,8 @@
         <div class="input__padrao"> 
         
           <div class="check-tarefa">
-            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-2" class="input__checkbox">
-            <label class="tarefas" for="tarefa-2">Ir ao mercado</label>
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Ir ao mercado</label>
           </div>
           <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
         
@@ -59,8 +59,8 @@
         <div class="input__padrao"> 
           
           <div class="check-tarefa">
-            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-3" class="input__checkbox">
-            <label class="tarefas" for="tarefa-3">Lavar roupa</label>
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Lavar roupa</label>
           </div>
             <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
         
@@ -69,8 +69,8 @@
         <div class="input__padrao"> 
           
           <div class="check-tarefa">
-            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-4" class="input__checkbox">
-            <label class="tarefas" for="tarefa-4">Ler por 30 min</label>
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Ler por 30 min</label>
           </div>
           <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">
 
@@ -79,15 +79,27 @@
         <div class="input__padrao"> 
           
           <div class="check-tarefa">
-            <input type="checkbox" name="tarefa-incluida" value="text" id="tarefa-5" class="input__checkbox">
-            <label class="tarefas" for="tarefa-5">Comprar comida gatos</label>
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Comprar comida gatos</label>
           </div>
           <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">  
         
         </div>
 
-        <div class="linha__final" id="ultimo-input">
-          <p class="linha__final-itens" id="itens__restantes">5 itens restantes</p>
+        <div class="input__padrao"> 
+          
+          <div class="check-tarefa">
+            <input type="checkbox" name="tarefa-incluida" value="text" class="input__checkbox">
+            <label class="tarefas">Comprar legumes</label>
+          </div>
+          <img src="/assets/images/icon-cross.svg" alt="Excluir" class="icone__excluir">  
+        
+        </div>
+      
+      </section>
+
+        <div class="linha__final">
+          <p class="linha__final-itens" id="itens__restantes">6 itens restantes</p>
           
           <div class="linha__filtros"> 
             <p class="linha__final-itens" id="filtro__todos">Todos</p>
@@ -95,10 +107,8 @@
             <p class="linha__final-itens" id="filtro__finalizados">Finalizados</p>
           </div> 
           
-          <p class="linha__final-itens" id="filtro__limpar">Limpar Finalizados</p>
+          <p class="linha__final-itens" id="filtro__limpar">Limpar finalizados</p>
         </div>
-
-      </section>
 
     </section>
 
@@ -109,7 +119,8 @@
     
   </main>
 
-  <script src="/script.js"></script>  
+  <script src="/js/troca-tema.js"></script> 
+  <script src="/js/adiciona-tarefa.js"></script> 
 
 </body>
 </html>

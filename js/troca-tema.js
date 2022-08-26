@@ -14,6 +14,7 @@
 
 const html = document.querySelector("html")
 const iconeTema = document.querySelector(".icone__theme")
+const imagemBackground = document.querySelector(".cabecalho")
 
 iconeTema.addEventListener("click", trocaTema)
 
@@ -21,6 +22,7 @@ function trocaTema(){
     if(iconeTema.src = "/assets/images/icon-sun.svg"){
         iconeTema.src = "/assets/images/icon-moon.svg"
         html.classList.toggle("white__mode")
+
     }
 }
 
