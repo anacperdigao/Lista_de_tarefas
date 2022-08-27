@@ -1,22 +1,17 @@
-var botaoExcluir = document.querySelectorAll(".icone__excluir")
+const botaoExcluir = document.querySelectorAll(".icone__excluir")
 
-for(var i = 0; i < botaoExcluir.length; i++){
+for(let i = 0; i < botaoExcluir.length; i++){
     
     botaoExcluir[i].addEventListener("click", excluirItem)
+}
 
-    function excluirItem(event){
+
+function excluirItem(event){
           
-            var alvoEvento = event.target
-            var paiDoAlvo = alvoEvento.parentNode
-        
-            paiDoAlvo.classList.add("fadeOut")
+            const alvoEvento = event.target
+            const paiDoAlvo = alvoEvento.parentNode
             
             setTimeout(function(){
                 paiDoAlvo.remove();
             });
     }
-
-}
-
-
-

@@ -6,7 +6,7 @@ botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
 
 function adicionaInput(){
-    var input = document.createElement("input")
+    const input = document.createElement("input")
 
     input.setAttribute("type","checkbox");
     input.setAttribute("name","tarefa-incluida");
@@ -17,7 +17,7 @@ function adicionaInput(){
 }
 
 function adicionaLabel(){  
-    var label = document.createElement("label")
+    const label = document.createElement("label")
     
     label.setAttribute("class","tarefas");
     label.textContent = novaTarefa.value;
@@ -27,7 +27,7 @@ function adicionaLabel(){
 
 
 function adicionaDivSecundaria(){
-    var divSecundaria = document.createElement("div")
+    const divSecundaria = document.createElement("div")
 
     divSecundaria.setAttribute("class","check-tarefa");
 
@@ -38,7 +38,8 @@ function adicionaDivSecundaria(){
 }
 
 function adicionaImagem(){
-    var imagem = document.createElement("img")
+    const imagem = document.createElement("img")
+    imagem.addEventListener("click", excluirItem)
 
     imagem.setAttribute("src","/assets/images/icon-cross.svg");
     imagem.setAttribute("alt","Excluir");
@@ -49,7 +50,7 @@ function adicionaImagem(){
 
 
 function adicionaDivPrincipal(){
-    var divPrincipal = document.createElement("div")
+    const divPrincipal = document.createElement("div")
 
     divPrincipal.setAttribute("class","input__padrao");
 
@@ -60,7 +61,7 @@ function adicionaDivPrincipal(){
 }
 
 function adicionaTarefa(){
-    var section = document.querySelector(".container__tarefas")
+    const section = document.querySelector(".container__tarefas")
     
     if(novaTarefa.value === ""){
         alert("Por favor, digite uma tarefa.")
@@ -75,3 +76,12 @@ function adicionaTarefa(){
 
 }
 
+function excluirItem(event){
+          
+    const alvoEvento = event.target
+    const paiDoAlvo = alvoEvento.parentNode
+    
+    setTimeout(function(){
+        paiDoAlvo.remove();
+    });
+}
