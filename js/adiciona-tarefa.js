@@ -2,7 +2,7 @@ const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
 
 
-botaoNovaTarefa.addEventListener("change", adicionaTarefa)
+botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
 
 function adicionaInput(){
@@ -62,13 +62,15 @@ function adicionaDivPrincipal(){
 function adicionaTarefa(){
     var section = document.querySelector(".container__tarefas")
     
-    if (this.checked){
-    section.appendChild(adicionaDivPrincipal());
-    } else{
+    if(novaTarefa.value === ""){
+        alert("Por favor, digite uma tarefa.")
 
-        novaTarefa.value = ""
+    } else{
+        section.appendChild(adicionaDivPrincipal());
     }
 
+    novaTarefa.value = ""
+    
     return section;
 
 }

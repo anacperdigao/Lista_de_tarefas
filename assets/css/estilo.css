@@ -12,10 +12,11 @@
     --Letra-linha-final: hsl(234, 11%, 52%);
     --Borders-color: hsl(237, 14%, 26%);
     --Input-exclusao-color: hsl(233, 11%, 84%);
+    --Check-botao-color: white;
 }
 
 .white__mode:root { 
-    --Background-color: hsl(236, 33%, 92%);
+    --Background-color: hsla(235, 32%, 92%, 0.801);
     --Background-input: hsl(0, 0%, 98%);
     --Letra-input-color: hsl(235, 19%, 35%);
     --Borders-color: hsl(236, 33%, 92%);
@@ -23,6 +24,7 @@
     --Letra-linha-final-hover:hsl(235, 19%, 35%);
     --Titulo-color: hsl(0, 0%, 98%);
     --Input-exclusao-color: hsl(233, 11%, 84%);
+    --Check-botao-color: black;
 }
 
 *{
@@ -71,7 +73,7 @@
 
 .input__padrao{
     background-color: var(--Background-input);
-    padding: 1em;
+    padding: 1.035em 1em;
     color: var(--Letra-input-color);
     font-size: 15px;
     font-weight: 400;
@@ -187,4 +189,15 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.imagem__nova-tarefa{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.imagem__nova-tarefa:hover{
+    transform: scale(1.2);
 }
