@@ -11,7 +11,6 @@
 const html = document.querySelector("html")
 const iconeTema = document.querySelector(".icone__theme")
 var num = 2
-//const imagemBackground = document.querySelector(".cabecalho")
 
 iconeTema.addEventListener("click", trocaTema)
 
@@ -28,7 +27,6 @@ function trocaTema(){
         iconeTema.src = "/assets/images/icon-moon.svg";
     
     }
-
     //garante que num fique alternando entre 1 e 2    
     num = (num % 2) + 1;
     });

@@ -13,6 +13,7 @@
     --Borders-color: hsl(237, 14%, 26%);
     --Input-exclusao-color: hsl(233, 11%, 84%);
     --Check-botao-color: white;
+    --Background-scrollbar: hsl(235, 24%, 19%);
 }
 
 .white__mode:root { 
@@ -25,6 +26,7 @@
     --Titulo-color: hsl(0, 0%, 98%);
     --Input-exclusao-color: hsl(233, 11%, 84%);
     --Check-botao-color: black;
+    --Background-scrollbar: hsla(235, 32%, 92%, 0.801);
 }
 
 *{
@@ -55,8 +57,24 @@
     display: flex;
     flex-direction: column;
     overflow: auto;
-    height: 290px;
+    height: 285px;
 }
+
+.container__tarefas::-webkit-scrollbar{
+    width: 20px;
+}
+
+.container__tarefas::-webkit-scrollbar-track{
+    background: var(--Letra-linha-final); 
+    border-radius: 5px;
+}
+
+.container__tarefas::-webkit-scrollbar-thumb{
+    background-color: var(--Background-scrollbar);    
+    border-radius: 5px;
+    border: 3px solid var(--Letra-linha-final);
+}
+
 
 .container__inicial{
     padding-bottom: 1.5em;
@@ -208,3 +226,4 @@
     background-color: var(--Background-input);
     border-radius: 5px;
 }
+
