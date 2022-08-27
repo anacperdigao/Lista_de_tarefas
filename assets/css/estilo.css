@@ -73,7 +73,8 @@
 
 .input__padrao{
     background-color: var(--Background-input);
-    padding: 1.035em 1em;
+    margin: 0.2em;
+    padding: 0.8em;
     color: var(--Letra-input-color);
     font-size: 15px;
     font-weight: 400;
@@ -129,6 +130,7 @@
 .linha__final{
     background-color: var(--Background-input);
     padding: 1em;
+    margin: 0.2em;
     font-size: 12px;
     display: flex;
     flex-direction: row;
@@ -200,4 +202,9 @@
 
 .imagem__nova-tarefa:hover{
     transform: scale(1.2);
+}
+
+.container__geral{
+    background-color: var(--Background-input);
+    border-radius: 5px;
 }

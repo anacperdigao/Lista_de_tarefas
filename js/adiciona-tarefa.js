@@ -76,6 +76,7 @@ function adicionaTarefa(){
 
 }
 
+
 function excluirItem(event){
           
     const alvoEvento = event.target
