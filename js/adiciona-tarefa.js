@@ -1,6 +1,7 @@
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
-
+var nId = 7 //Apenas para atribuir id e for nas tarefas
+var nFor = 7
 
 botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
@@ -8,20 +9,29 @@ botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 function adicionaInput(){
     const input = document.createElement("input")
 
+    input.addEventListener("click", tarefaFinalizada)
+
     input.setAttribute("type","checkbox");
     input.setAttribute("name","tarefa-incluida");
     input.setAttribute("value","text");
-    input.setAttribute("class","input__checkbox"); 
-   
+    input.setAttribute("class","input__checkbox");
+    input.setAttribute("id",`tarefa-${nId}`); 
+    
+    nId = nId + 1
+    
     return input;
+
 }
 
 function adicionaLabel(){  
     const label = document.createElement("label")
     
     label.setAttribute("class","tarefas");
+    label.setAttribute("for",`tarefa-${nFor}`); 
+    
     label.textContent = novaTarefa.value;
 
+    nFor = nFor + 1
     return label;
 }
 
@@ -86,3 +96,17 @@ function excluirItem(event){
         paiDoAlvo.remove();
     });
 }
+
+/*
+function tarefaFinalizada(){
+
+    if(botaoChecked.checked){        
+        labelFinalizado.style.textDecoration = "line-through"
+        labelFinalizado.setAttribute("class","finalizados todos")
+
+    }else{
+        labelFinalizado.style.textDecoration = "none"
+        labelFinalizado.setAttribute("class","ativos todos")
+    } 
+} 
+*/

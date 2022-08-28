@@ -17,7 +17,7 @@
 }
 
 .white__mode:root { 
-    --Background-color: hsla(235, 32%, 92%, 0.801);
+    --Background-color: hsla(235, 32%, 92%);
     --Background-input: hsl(0, 0%, 98%);
     --Letra-input-color: hsl(235, 19%, 35%);
     --Borders-color: hsl(236, 33%, 92%);
@@ -26,7 +26,7 @@
     --Titulo-color: hsl(0, 0%, 98%);
     --Input-exclusao-color: hsl(233, 11%, 84%);
     --Check-botao-color: black;
-    --Background-scrollbar: hsla(235, 32%, 92%, 0.801);
+    --Background-scrollbar: hsla(235, 32%, 92%);
 }
 
 *{
@@ -61,7 +61,7 @@
 }
 
 .container__tarefas::-webkit-scrollbar{
-    width: 20px;
+    width: 18px;
 }
 
 .container__tarefas::-webkit-scrollbar-track{
