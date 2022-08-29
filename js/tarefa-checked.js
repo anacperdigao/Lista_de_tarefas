@@ -13,11 +13,11 @@ function tarefaFinalizada(event){
     if(alvoEvento.checked){        
         
         irmaoDoAlvo.style.textDecoration = "line-through"
-        irmaoDoAlvo.setAttribute("class","finalizados todos")       
+        irmaoDoAlvo.setAttribute("class","tarefas finalizados todos")       
 
     }else{  
         irmaoDoAlvo.style.textDecoration = "none"
-        irmaoDoAlvo.setAttribute("class","ativos todos")
+        irmaoDoAlvo.setAttribute("class","tarefas ativos todos")
     } 
       
 } 

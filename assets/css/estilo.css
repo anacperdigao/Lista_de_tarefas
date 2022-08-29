@@ -227,3 +227,7 @@
     border-radius: 5px;
 }
 
+/*Criada para usar no filtra.js */
+.invisivel {
+	display: none;
+}

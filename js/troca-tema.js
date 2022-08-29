@@ -1,7 +1,6 @@
 /*Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
-- Mark todos as complete
 - Filter by all/active/complete todos
 - Clear all completed todos
 - **Bonus**: Drag and drop to reorder items on the list

@@ -26,8 +26,8 @@ function adicionaInput(){
 function adicionaLabel(){  
     const label = document.createElement("label")
     
-    label.setAttribute("class","tarefas");
-    label.setAttribute("for",`tarefa-${nFor}`); 
+    label.setAttribute("class","tarefas ativos todos");
+    label.setAttribute("for",`tarefa-${nFor}`);
     
     label.textContent = novaTarefa.value;
 
@@ -77,7 +77,7 @@ function adicionaTarefa(){
         alert("Por favor, digite uma tarefa.")
 
     } else{
-        section.appendChild(adicionaDivPrincipal());
+        section.appendChild(adicionaDivPrincipal())
     }
 
     novaTarefa.value = ""
@@ -108,11 +108,11 @@ function tarefaFinalizada(event){
     if(alvoEvento.checked){        
         
         irmaoDoAlvo.style.textDecoration = "line-through"
-        irmaoDoAlvo.setAttribute("class","finalizados todos")       
+        irmaoDoAlvo.setAttribute("class","tarefas finalizados todos")       
 
     }else{  
         irmaoDoAlvo.style.textDecoration = "none"
-        irmaoDoAlvo.setAttribute("class","ativos todos")
+        irmaoDoAlvo.setAttribute("class","tarefas ativos todos")
     } 
       
 } 
