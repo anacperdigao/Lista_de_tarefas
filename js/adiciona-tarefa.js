@@ -1,7 +1,7 @@
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
 var nId = 7 //Apenas para atribuir id e for nas tarefas
-var nFor = 7
+var nFor = 7 //Apenas para atribuir id e for nas tarefas
 
 botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
@@ -86,6 +86,7 @@ function adicionaTarefa(){
 
 }
 
+//Chamei essa função dentro da função adicionaImagem
 
 function excluirItem(event){
           
@@ -97,16 +98,21 @@ function excluirItem(event){
     });
 }
 
-/*
-function tarefaFinalizada(){
+//Chamei essa função dentro da função adicionaInput
 
-    if(botaoChecked.checked){        
-        labelFinalizado.style.textDecoration = "line-through"
-        labelFinalizado.setAttribute("class","finalizados todos")
+function tarefaFinalizada(event){
 
-    }else{
-        labelFinalizado.style.textDecoration = "none"
-        labelFinalizado.setAttribute("class","ativos todos")
+    const alvoEvento = event.target
+    const irmaoDoAlvo = alvoEvento.nextElementSibling
+
+    if(alvoEvento.checked){        
+        
+        irmaoDoAlvo.style.textDecoration = "line-through"
+        irmaoDoAlvo.setAttribute("class","finalizados todos")       
+
+    }else{  
+        irmaoDoAlvo.style.textDecoration = "none"
+        irmaoDoAlvo.setAttribute("class","ativos todos")
     } 
+      
 } 
-*/
