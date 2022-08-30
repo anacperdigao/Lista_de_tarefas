@@ -1,14 +1,14 @@
 @media screen and (max-width: 480px){
 
     .cabecalho{
-        background: url("/assets/images/bg-mobile-dark.jpg");
-        height: 22vh;
-        width: 100vw;
+        background: url("/assets/images/bg-desktop-dark.jpg");
+        height: 25vh;
+        width: 100%;
         background-repeat: no-repeat;
     }
 
     .background{
-        height: 78vh;
+        height: 75vh;
         width: 100vw;
         z-index: -1;
     }
