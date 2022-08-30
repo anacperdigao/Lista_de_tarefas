@@ -9,8 +9,6 @@ botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 function adicionaInput(){
     const input = document.createElement("input")
 
-    input.addEventListener("click", tarefaFinalizada)
-
     input.setAttribute("type","checkbox");
     input.setAttribute("name","tarefa-incluida");
     input.setAttribute("value","text");
