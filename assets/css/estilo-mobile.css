@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px){
+
+    .cabecalho{
+        background: url("/assets/images/bg-mobile-dark.jpg");
+        height: 22vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    }
+
+    .background{
+        height: 78vh;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    .container__total{
+        width: 90vw;        
+    }
+
+    .linha__filtros{
+        gap: 0.5em; 
+    }
+
+    .linha__final{
+        gap: 3em;
+    }
+
+}

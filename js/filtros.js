@@ -6,7 +6,6 @@ const filtroTodos = document.querySelector("#filtro__todos")
 const filtroAtivos = document.querySelector("#filtro__ativos")
 const filtroFinalizados = document.querySelector("#filtro__finalizados")
 const limparFinalizados = document.querySelector("#filtro__limpar")
-//const itensRestantes = document.querySelector("#itens__restantes")
 
 //Adicionando evento de escuta para os botões
 filtroTodos.addEventListener("click", filtrandoTodos)
@@ -47,11 +46,3 @@ function limpandoFinalizados(){
     })
 }
 
-
-/* Itens restantes
-
-function quantItensRestantes(){
-
-    itensRestantes.textContent = `${divsFiltro.filter((t)=> t.checked === false).length} itens restantes`
-}
-*/
