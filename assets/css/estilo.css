@@ -121,7 +121,7 @@ body{
     width: 35vw;
     z-index: 100;
     margin: auto;
-    top: -170px;
+    bottom: 170px;
 
 }
 
@@ -225,3 +225,8 @@ body{
     border-radius: 5px;
 }
 
+/* Criada para o filtro.js */
+
+.filtro-ativo{
+    color: var(--Bright-Blue);
+}

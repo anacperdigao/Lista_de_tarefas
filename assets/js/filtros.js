@@ -16,6 +16,15 @@ limparFinalizados.addEventListener("click", limpandoFinalizados)
 //Funções
 
 function filtrandoTodos(){
+    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+    if (i===0){
+        d.classList.add("filtro-ativo")
+    } else{
+        d.classList.remove("filtro-ativo")
+    }
+    })
+
+    
     divsFiltro.forEach((divsFiltro) => {
         divsFiltro.style.display = "grid"
     })  
@@ -23,6 +32,15 @@ function filtrandoTodos(){
 
 
 function filtrandoAtivos() {
+    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+        if (i===1){
+            d.classList.add("filtro-ativo")
+        } else{
+            d.classList.remove("filtro-ativo")
+        }
+        })
+
+    
     divsFiltro.forEach((divsFiltro) => {
         divsFiltro.style.display = "grid"
         if(divsFiltro.querySelector("input").checked)
@@ -32,6 +50,15 @@ function filtrandoAtivos() {
 
 
 function filtrandoFinalizados(){
+    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+        if (i===2){
+            d.classList.add("filtro-ativo")
+        } else{
+            d.classList.remove("filtro-ativo")
+        }
+        })
+
+    
     divsFiltro.forEach((divsFiltro) => {
         divsFiltro.style.display = "grid"
         if(!divsFiltro.querySelector("input").checked)
