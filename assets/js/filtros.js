@@ -18,13 +18,13 @@ limparFinalizados.addEventListener("click", limpandoFinalizados)
 function filtrandoTodos(){
     divsFiltro.forEach((divsFiltro) => {
         divsFiltro.style.display = "grid"
-    })
-    return filtrandoTodos  
+    })  
 }
 
 
 function filtrandoAtivos() {
     divsFiltro.forEach((divsFiltro) => {
+        divsFiltro.style.display = "grid"
         if(divsFiltro.querySelector("input").checked)
             divsFiltro.style.display = "none"
     })
@@ -33,6 +33,7 @@ function filtrandoAtivos() {
 
 function filtrandoFinalizados(){
     divsFiltro.forEach((divsFiltro) => {
+        divsFiltro.style.display = "grid"
         if(!divsFiltro.querySelector("input").checked)
             divsFiltro.style.display = "none"
     })

@@ -1,7 +1,7 @@
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
-var nId = 7 //Apenas para atribuir id e for nas tarefas
-var nFor = 7 //Apenas para atribuir id e for nas tarefas
+var nId = 5 //Apenas para atribuir id e for nas tarefas
+var nFor = 5 //Apenas para atribuir id e for nas tarefas
 
 botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
