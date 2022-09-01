@@ -1,5 +1,5 @@
-//Puxando as divs principais
-const divsFiltro = document.querySelectorAll(".input__padrao")
+//Puxando a classe da linha dos filtros apenas para alteração de CSS
+const itensFinal = document.querySelectorAll(".linha__final-itens")
 
 //Puxando os botões de filtros
 const filtroTodos = document.querySelector("#filtro__todos")
@@ -13,10 +13,12 @@ filtroAtivos.addEventListener("click", filtrandoAtivos)
 filtroFinalizados.addEventListener("click", filtrandoFinalizados)
 limparFinalizados.addEventListener("click", limpandoFinalizados)
 
-//Funções
+//Funções de filtragem e estilização
 
 function filtrandoTodos(){
-    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+    const divsFiltro = document.querySelectorAll(".input__padrao")
+
+    itensFinal.forEach((d, i) => {
     if (i===0){
         d.classList.add("filtro-ativo")
     } else{
@@ -32,31 +34,35 @@ function filtrandoTodos(){
 
 
 function filtrandoAtivos() {
-    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+    const divsFiltro = document.querySelectorAll(".input__padrao")
+
+    itensFinal.forEach((d, i) => {
         if (i===1){
             d.classList.add("filtro-ativo")
         } else{
             d.classList.remove("filtro-ativo")
         }
-        })
+    })
 
-    
+
     divsFiltro.forEach((divsFiltro) => {
         divsFiltro.style.display = "grid"
         if(divsFiltro.querySelector("input").checked)
             divsFiltro.style.display = "none"
-    })
-}
+        })
+    }
 
 
 function filtrandoFinalizados(){
-    document.querySelectorAll(".linha__final-itens").forEach((d, i) => {
+    const divsFiltro = document.querySelectorAll(".input__padrao")
+
+    itensFinal.forEach((d, i) => {
         if (i===2){
             d.classList.add("filtro-ativo")
         } else{
             d.classList.remove("filtro-ativo")
         }
-        })
+    })
 
     
     divsFiltro.forEach((divsFiltro) => {
@@ -68,9 +74,12 @@ function filtrandoFinalizados(){
 
 
 function limpandoFinalizados(){
+    const divsFiltro = document.querySelectorAll(".input__padrao")
+
     divsFiltro.forEach((divsFiltro) => {
         if(divsFiltro.querySelector("input").checked)
             divsFiltro.remove()
     })
 }
+
 

@@ -1,14 +1,16 @@
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
-var nId = 5 //Apenas para atribuir id e for nas tarefas
-var nFor = 5 //Apenas para atribuir id e for nas tarefas
+
+
+var nId = 1 //Apenas para atribuir id e for nas tarefas
+var nFor = 1 //Apenas para atribuir id e for nas tarefas
 
 botaoNovaTarefa.addEventListener("click", adicionaTarefa)
 
 
 function adicionaInput(){
     const input = document.createElement("input")
-
+    
     input.addEventListener("click",tarefaFinalizada)
 
     input.setAttribute("type","checkbox");
@@ -16,7 +18,7 @@ function adicionaInput(){
     input.setAttribute("value","text");
     input.setAttribute("class","input__checkbox");
     input.setAttribute("id",`tarefa-${nId}`); 
-    
+
     nId = nId + 1
     
     return input;
@@ -26,7 +28,7 @@ function adicionaInput(){
 function adicionaLabel(){  
     const label = document.createElement("label")
     
-    label.setAttribute("class","tarefas ativos todos");
+    label.setAttribute("class","tarefas");
     label.setAttribute("for",`tarefa-${nFor}`);
     
     label.textContent = novaTarefa.value;
@@ -86,6 +88,9 @@ function adicionaTarefa(){
 
 }
 
+
+//--------------------------------------------------------------------------------------------------
+
 //Chamei essa função dentro da função adicionaImagem
 
 function excluirItem(event){
@@ -116,3 +121,4 @@ function tarefaFinalizada(event){
     } 
       
 } 
+
