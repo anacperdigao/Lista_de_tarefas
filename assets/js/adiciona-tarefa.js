@@ -1,7 +1,6 @@
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
 
-
 var nId = 1 //Apenas para atribuir id e for nas tarefas
 var nFor = 1 //Apenas para atribuir id e for nas tarefas
 
@@ -91,7 +90,7 @@ function adicionaTarefa(){
 
 //--------------------------------------------------------------------------------------------------
 
-//Chamei essa função dentro da função adicionaImagem
+//Chamei essa função do arquivo exclui-tarefa.js dentro da função adicionaImagem
 
 function excluirItem(event){
           
@@ -103,7 +102,7 @@ function excluirItem(event){
     });
 }
 
-//Chamei essa função dentro da função adicionaInput
+//Chamei essa função do arquivo tarefa-checked.js dentro da função adicionaInput
 
 function tarefaFinalizada(event){
 
