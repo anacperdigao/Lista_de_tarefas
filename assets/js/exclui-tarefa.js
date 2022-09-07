@@ -6,7 +6,7 @@ for(let i = 0; i < botaoExcluir.length; i++){
 }
 
 
-function excluirItem(event){
+export function excluirItem(event){
           
     const alvoEvento = event.target
     const paiDoAlvo = alvoEvento.parentNode

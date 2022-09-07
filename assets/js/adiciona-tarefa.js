@@ -1,3 +1,6 @@
+import {excluirItem} from './exclui-tarefa.js'
+import {tarefaFinalizada} from './tarefa-checked.js'
+
 const botaoNovaTarefa = document.querySelector("#check-nova-tarefa")
 const novaTarefa = document.querySelector(".nova-tarefa")
 
@@ -86,38 +89,4 @@ function adicionaTarefa(){
     return section;
 
 }
-
-
-//--------------------------------------------------------------------------------------------------
-
-//Chamei essa função do arquivo exclui-tarefa.js dentro da função adicionaImagem
-
-function excluirItem(event){
-          
-    const alvoEvento = event.target
-    const paiDoAlvo = alvoEvento.parentNode
-    
-    setTimeout(function(){
-        paiDoAlvo.remove();
-    });
-}
-
-//Chamei essa função do arquivo tarefa-checked.js dentro da função adicionaInput
-
-function tarefaFinalizada(event){
-
-    const alvoEvento = event.target
-    const irmaoDoAlvo = alvoEvento.nextElementSibling
-
-    if(alvoEvento.checked){        
-        
-        irmaoDoAlvo.style.textDecoration = "line-through"
-        irmaoDoAlvo.setAttribute("class","tarefas finalizados todos")       
-
-    }else{  
-        irmaoDoAlvo.style.textDecoration = "none"
-        irmaoDoAlvo.setAttribute("class","tarefas ativos todos")
-    } 
-      
-} 
 

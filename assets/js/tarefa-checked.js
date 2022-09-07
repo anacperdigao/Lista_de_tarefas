@@ -5,7 +5,7 @@ for(let i = 0; i < botaoChecked.length; i++){
     botaoChecked[i].addEventListener("click", tarefaFinalizada)
 }
 
-function tarefaFinalizada(event){
+export function tarefaFinalizada(event){
 
     const alvoEvento = event.target
     const irmaoDoAlvo = alvoEvento.nextElementSibling
