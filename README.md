@@ -13,17 +13,23 @@
 
 <h2 align="center">Status do projeto </h2>
 <h4> :white_check_mark: HTML e CSS Desktop e Mobile - finalizado :white_check_mark: </h4>
-<h4> :construction: Funcionalidades JS - em construção :construction: </h4>
+<h4> :white_check_mark: Funcionalidades JS - finalizado :white_check_mark: </h4>
 
 <br>
 <h2 align="center">:hammer: Funcionalidades do projeto </h2>
 
-- ``Funcionalidade 1:`` Inserir tarefa na lista. (finalizado)
-- ``Funcionalidade 2:`` Dar check se a tarefa foi feita. (finalizado)
-- ``Funcionalidade 3:`` Excluir alguma tarefa sendo realizada ou não. (finalizado)
-- ``Funcionalidade 4:`` Filtros. (em construção)
-- ``Funcionalidade 5:`` Dark e White Mode. (finalizado)
-- ``Funcionalidade 6:`` Responsividade Mobile (finalizado)
+- ``Funcionalidade 1:`` Inserir tarefa na lista.
+- ``Funcionalidade 2:`` Dar check se a tarefa foi feita.
+- ``Funcionalidade 3:`` Excluir alguma tarefa sendo realizada ou não.
+- ``Funcionalidade 4:`` Filtros.
+- ``Funcionalidade 5:`` Dark e White Mode. 
+- ``Funcionalidade 6:`` Responsividade Mobile.
+
+<p>Vídeo 1: Desktop</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/187976492-4988d4ff-6605-4184-9717-663632498cda.gif"></p>
+
+<p>Vídeo 1: Mobile</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/187979118-73eb557f-283f-4b70-856b-d9f352919ce3.gif"></p>
 
 <br>
 <h2 align="center"> :file_folder: Acesso ao projeto </h2>
